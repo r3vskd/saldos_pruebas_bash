@@ -32,7 +32,7 @@ main() {
   greet "Bob"
 }
 
-################# Classes examples
+############### Classes examples
 # Define a "class" for Car using an associative array
 declare -A Car
 
