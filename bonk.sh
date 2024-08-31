@@ -21,7 +21,7 @@ main() {
   printf "This is a red line\n"
   reset_color
 }
-###############################function#########
+###########function#########
 greet() {
   local name=$1
   printf "Hello, %s!\n" "$name"
@@ -32,7 +32,16 @@ main() {
   greet "Bob"
 }
 
-# Function to display car details
+################### Classes examples
+# Define a "class" for Car using an associative array
+declare -A Car
+
+# Constructor function to initialize the Car object
+Car_new() {
+  local car_name=$1
+  declare -gA "$car_name"
+}
+### Class to display car details
 Car_display() {
   local car_name=$1
   printf "Make: %s\n" "$(Car_get_property "$car_name" "make")"
