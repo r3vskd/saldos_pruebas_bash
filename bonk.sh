@@ -32,5 +32,13 @@ main() {
   greet "Bob"
 }
 
+# Function to display car details
+Car_display() {
+  local car_name=$1
+  printf "Make: %s\n" "$(Car_get_property "$car_name" "make")"
+  printf "Model: %s\n" "$(Car_get_property "$car_name" "model")"
+  printf "Year: %s\n" "$(Car_get_property "$car_name" "year")"
+}
+
 main
 
