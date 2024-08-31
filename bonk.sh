@@ -20,18 +20,25 @@ main() {
   set_color "$RED"
   printf "This is a red line\n"
   reset_color
+
+    greet "Alice"
+  greet "Bob"
+    # Create a new Car object
+  Car_new myCar
+
+  # Set properties for myCar
+  Car_set_property myCar "make" "Toyota"
+  Car_set_property myCar "model" "Corolla"
+  Car_set_property myCar "year" "2020"
+
+  # Display car details
+  Car_display myCar
 }
 ######### Function example 
 greet() {
   local name=$1
   printf "Hello, %s!\n" "$name"
 }
-
-main() {
-  greet "Alice"
-  greet "Bob"
-}
-
 ########### Classes examples
 # Define a "class" for Car using an associative array
 declare -A Car
