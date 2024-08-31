@@ -21,7 +21,7 @@ main() {
   printf "This is a red line\n"
   reset_color
 }
-###############################function##############
+###############################function############
 greet() {
   local name=$1
   printf "Hello, %s!\n" "$name"
