@@ -1,4 +1,4 @@
-#!/bin/bash
+#/bin/bash
 
 set_color() {
   local color_code=$1
@@ -18,42 +18,27 @@ main() {
   local CYAN="36"
 
   set_color "$RED"
-  printf "This is a red line\n"
+  printf "██████   ██████  ███    ██ ██   ██ \n"
+  printf "██   ██ ██    ██ ████   ██ ██  ██  \n"
+  printf "██████  ██    ██ ██ ██  ██ █████   \n"
+  printf "██   ██ ██    ██ ██  ██ ██ ██  ██  \n"
+  printf "██████   ██████  ██   ████ ██   ██ \n"
+  printf "By: r3vskd \n"
   reset_color
 
-    greet "Alice"
-  greet "Bob"
-    # Create a new Car object
-  Car_new myCar
+  ############# clase con los atributos de la wallet
+  declare -A asignar_valores
 
-  # Set properties for myCar
-  Car_set_property myCar "make" "Toyota"
-  Car_set_property myCar "model" "Corolla"
-  Car_set_property myCar "year" "2020"
+  asignar_valores_fn(){
+    local titular=$1
+    declare -gA "$titular"
+  }
 
-  # Display car details
-  Car_display myCar
-}
-######### Function example 
-greet() {
-  local name=$1
-  printf "Hello, %s!\n" "$name"
-}
-########### Classes examples
-# Define a "class" for Car using an associative array
-declare -A Car
-
-# Constructor function to initialize the Car object
-Car_new() {
-  local car_name=$1
-  declare -gA "$car_name"
-}
-### Class to display car details
-Car_display() {
-  local car_name=$1
-  printf "Make: %s\n" "$(Car_get_property "$car_name" "make")"
-  printf "Model: %s\n" "$(Car_get_property "$car_name" "model")"
-  printf "Year: %s\n" "$(Car_get_property "$car_name" "year")"
+  asignar_atributos(){
+    local titular=$1
+    local cuenta=$2
+    local saldo=$3
+  }
 }
 
 main
