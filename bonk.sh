@@ -45,6 +45,11 @@ main() {
     local titular=$1
     local cuenta operacion cantidad
   }
+
+  read -p 'Ingresa el nuemro de cuenta al que deseas depostiar'
+  read -p 'Deseas depositar o retirar? (ingresa alguuna de las dos palabras: depositar o retirar):  '
+  read -p 'Ingresa la cantidad que deseas depositar: '
+  
 }
 
 main
