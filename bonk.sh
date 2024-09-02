@@ -38,6 +38,12 @@ main() {
     local titular=$1
     local cuenta=$2
     local saldo=$3
+    eval "$titular[$cuenta]=\"$saldo\""
+  }
+
+  mostrar_atributos(){
+    local titular=$1
+    local cuenta operacion cantidad
   }
 }
 
