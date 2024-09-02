@@ -47,8 +47,8 @@ main() {
   }
 
   read -p 'Ingresa el nuemro de cuenta al que deseas depostiar' cuenta
-  read -p 'Deseas depositar o retirar? (ingresa alguuna de las dos palabras: depositar o retirar):  ' cantidad
-  read -p 'Ingresa la cantidad que deseas depositar: '
+  read -p 'Deseas depositar o retirar? (ingresa alguuna de las dos palabras: depositar o retirar):  ' operacion
+  read -p 'Ingresa la cantidad que deseas depositar: ' 
   read -p 'Ingresa el numero de cuenta que deseas visualizar el saldo'
 }
 
