@@ -1,0 +1,10 @@
+name: Fsirt Workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-lastest
+    steps:
+      - name: Print greeting
+        run: echo "hello"
+      - name: Print good bye
+        run: echo "done!"
